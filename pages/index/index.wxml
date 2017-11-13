@@ -7,8 +7,11 @@
         <view class="header">{{ item.header }}</view>
         <view class="description">{{ item.description }}</view>
         <view class="action">
-          <button class="button">预约试驾</button>
-          <button class="button primary">了解更多</button>
+          <button class="button" bindtap='testDrive'>预约试驾</button>
+          <button 
+          class="button primary" 
+          bindtap='readMore'
+          data-id='{{ item.id }}'>了解更多</button>
         </view>
       </view>
     </swiper-item>
@@ -16,6 +19,7 @@
 </swiper>
 <view class='cards'>
 <view class='card' hover-class='hover' wx:for="{{ entities }}" wx:key="id">
+<navigator url='/pages/vehicles/show?id={{ item.id }}'hover-class='none'>
 <image src='{{ item.image }}' mode='aspectFill' />
 <view class='content'>
 <view class='header'>
@@ -27,5 +31,6 @@
 <view class='description'>{{ item.description}}</view>
 <view class='meta'>{{ item.meta.price }}</view>
 </view>
+</navigator>
 </view>
 </view>

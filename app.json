@@ -1,8 +1,10 @@
 {
   "pages":[
-    "pages/vehicles/show",
+    "pages/stories/index",
+    "pages/stories/show",
     "pages/index/index",
-    "pages/stories/index"
+    "pages/vehicles/show"
+   
   ],
   "window":{
   "navigationBarTitleText":"心美味",

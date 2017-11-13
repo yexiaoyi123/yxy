@@ -1,9 +1,16 @@
+import testDrive from'../../modules/test-drive.js'
 const app = getApp()
 
 Page({
  data:{
    slides:null,
    entities:null
+ },
+ testDrive,
+ readMore(event){
+   wx.navigateTo({
+     url: '/pages/vehicles/show?id=${ event.target.dataset.id }',
+   })
  },
  onLoad(){
    this.setData({
