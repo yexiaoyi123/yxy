@@ -5,7 +5,7 @@ export default {
       header: "全新一代发现",
       sub_header: "Discovery",
       description: "全尺寸七座 SUV，现已接受预订。",
-      image: "http://pic.jj20.com/up/allimg/811/110514111532/141105111532-3.jpg"
+      image: "https://resources.ninghao.net/landrover/discover-1.jpg"
     },
     {
       id: 3,

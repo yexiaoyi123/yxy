@@ -1,8 +1,8 @@
 const app = getApp()
 
 Page({
-  data:{
-    entity:null
+  data: {
+    entity: null
   },
   onLoad(options) {
     const id = options.id
@@ -11,12 +11,11 @@ Page({
     })
 
     this.setData({
-      entity: entiey[0]
+      entity: entity[0]
     })
 
     wx.setNavigationBarTitle({
       title: this.data.entity.header
     })
-
   }
 })
